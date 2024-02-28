@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slow Loading Page Simulation</title>
+  <style>
+    /* Initially hide the body's content */
+    body {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Page Content</h1>
+  <p>This content will be shown after a delay to simulate a slow connection.</p>
+
+  <script>
+    // Function to show the content
+    function showContent() {
+      document.body.style.display = 'block'; // Show the body content
+    }
+
+    // Wait for 5 seconds (5000 milliseconds) before showing the content
+    setTimeout(showContent, 5000);
+  </script>
+
+</body>
+
+</html>
